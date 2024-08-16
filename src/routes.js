@@ -1,32 +1,27 @@
-import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Movie from "./pages/Movie";
-import Actors from "./pages/Actors";
 import Directors from "./pages/Directors";
+import Actors from "./pages/Actors";
 import ErrorPage from "./pages/ErrorPage";
 
 const routes = [
-  {
-    path: "/",
-    element: <Home />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: "/movie/:id",
-    element: <Movie />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: "/directors",
-    element: <Directors />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: "/actors",
-    element: <Actors />,
-    errorElement: <ErrorPage />
-  }
- 
-];
+    {
+      path: "/",
+      element: <Home />,
+      errorElement: <ErrorPage />
+    },
+    {
+      path: "/movie/:id",
+      element: <Movie />
+    },
+    {
+      path: "/directors",
+      element: <Directors />
+    },
+    {
+      path:"/actors",
+      element: <Actors />
+    }
+  ]
 
 export default routes;
